@@ -1,0 +1,9 @@
+* {
+    font-family: 'Roboto Mono', sans-serif;
+}
+h1, h2, h3, h4 {
+    font-weight: 700;
+}
+td {
+    font-size: 14px;
+}
