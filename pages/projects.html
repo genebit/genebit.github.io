@@ -2,28 +2,70 @@
 <html lang="en">
 
 <head>
+    <title>Home - GeneBit</title>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 
-    <title>Projects - Gene's Project</title>
+    <link defer rel="stylesheet" href="/custom.css">
 </head>
 
 <body>
-    <nav>
-        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="../home.html" role="tab" aria-controls="nav-home" aria-selected="false">Home</a>
-            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="/pages/about.html" role="tab" aria-controls="nav-profile" aria-selected="false">About</a>
-            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="/pages/projects.html" role="tab" aria-controls="nav-contact" aria-selected="true">Projects</a>
+    <div class="row">
+        <div class="col-md-12">
+            <h1>GeneBit.Github.io</h1>
         </div>
-    </nav>
-    <div class="tab-content" id="nav-tabContent">
-        <div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">This is the home page</div>
-        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">This is the about page</div>
-        <div class="tab-pane fade show active" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">This is the project page</div>
     </div>
-    </nav>
+    <div class="row" style="margin-top: 25px;">
+        <div class="col-md-6">
+            <div class="nav flex-column" aria-orientation="vertical">
+                <a class="nav-link" href="/home.html">Home</a>
+                <a class="nav-link" href="/pages/about.html">About Me</a>
+                <a class="nav-link" href="/pages/projects.html">Project</a>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="border-radius: 20px; height: 400px;">
+                <h2 class="m-4">My Web Projects</h2>
+                <hr/>
+                <a class="project-link" href="https://genebit.github.io/myASCII/">MyASCII</a>
+                <a class="project-link" href="https://genebit.github.io/p5js-double-pendulum/">P5JS Double Pendulum</a>
+                <a class="project-link" href="">Pong Game</a>
+                <a class="project-link" href="">Rock Paper Scissor</a>
+                <a class="project-link" href="">My Configuration</a>
+            </div>
+        </div>
+    </div>
+
+    <footer style="position: fixed; bottom: 0; width: 90%;">
+        <hr/>
+        <div class="row">
+            <div class="col-md-6">
+                <p>@2021 Gene Bitara</p>
+            </div>
+            <div class="col-md-6">
+                <div class="pull-right">
+                    <p>
+                        <i class="fa fa-github" style="font-size:30px" aria-hidden="true"></i>
+                        <i class="fa fa-facebook-square" style="font-size:30px" aria-hidden="true"></i>
+                        <i class="fa fa-envelope" style="font-size:30px" aria-hidden="true"></i>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 
 </html>
