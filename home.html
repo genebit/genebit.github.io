@@ -14,53 +14,66 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-
+    
+    <!-- Swup -->
+    <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+    
     <link defer rel="stylesheet" href="/custom.css">
+    <script defer src="/pageanim.js"></script>
 </head>
 
 <body>
-    <div class="row">
-        <div class="col-md-12">
-            <h1>GeneBit.Github.io</h1>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" style="color:rgb(224, 224, 224);">GeneBit.Github.io</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item text-center">
+                    <a class="nav-link" href="/home.html">Home</a>
+                </li>
+                <li class="nav-item text-center">
+                    <a class="nav-link" href="/pages/about.html">About Me</a>
+                </li>
+                <li class="nav-item text-center">
+                    <a class="nav-link" href="/pages/projects.html">Projects</a>
+                </li>
+            </ul>
         </div>
-    </div>
-    <div class="row" style="margin-top: 25px;">
-        <div class="col-md-6">
-            <div class="nav flex-column" aria-orientation="vertical">
-                <a class="nav-link" href="/home.html">Home</a>
-                <a class="nav-link" href="/pages/about.html">About Me</a>
-                <a class="nav-link" href="/pages/projects.html">Project</a>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="card" style="border-radius: 20px; height: 400px;">
-                <h2 class="m-4">Welcome!</h2>
-                <hr/>
-                <p class="m-4" style="text-align: justify;">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                </p>
-            </div>
-        </div>
-    </div>
+    </nav>
 
-    <footer style="position: fixed; bottom: 0; width: 90%;">
-        <hr/>
-        <div class="row">
-            <div class="col-md-6">
-                <p>@2021 Gene Bitara</p>
+    <main id="swup" class="transition-page">
+        <div class="row m-4">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <h2 class="text-center">Welcome!</h2>
+                <hr/>
+                <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat.</p>
             </div>
-            <div class="col-md-6">
-                <div class="pull-right">
-                    <p>
-                        <i class="fa fa-github" style="font-size:30px" aria-hidden="true"></i>
-                        <i class="fa fa-facebook-square" style="font-size:30px" aria-hidden="true"></i>
-                        <i class="fa fa-envelope" style="font-size:30px" aria-hidden="true"></i>
-                    </p>
+            <div class="col-md-2"></div>
+        </div>
+    </main>
+
+    <footer>
+        <hr />
+            <div class="row">
+                <div class="col-md-6">
+                    <p>@2021 Gene Bitara</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="pull-right">
+                        <p>
+                            <i class="fa fa-github" style="font-size:30px" aria-hidden="true"></i>
+                            <i class="fa fa-facebook-square" style="font-size:30px" aria-hidden="true"></i>
+                            <i class="fa fa-envelope" style="font-size:30px" aria-hidden="true"></i>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+    </footer> 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
