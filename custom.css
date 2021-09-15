@@ -6,11 +6,9 @@ h1, h2, h3 {
     font-weight: 700;
 }
 
-a {
-    color: black;
-}
-a:hover {
-    color: white;
+body {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 footer {
@@ -19,6 +17,12 @@ footer {
     position: fixed; 
     bottom: 0; 
     width: 90%;
+}
+
+nav {
+    color: rgb(185, 185, 185);
+    box-shadow: 0px 0px 8px 0px;
+    z-index: 1;
 }
 
 /* Transition */
@@ -36,20 +40,6 @@ html.is-animating .transition-page {
 
 .card {
     box-shadow: 0px 0px 8px 0px #b3b3b3;
-}
-
-.nav-link {
-    border-radius: 10px;
-    width: 100px;
-    height: 45px;
-    transition: width 0.5s, background-color 1s, color 0.5s;
-}
-  
-.nav-link:hover {
-    color: white !important;
-    width: 150px;
-    background-color: rgb(100, 100, 100);
-    cursor: pointer;
 }
 
 .project-link {
