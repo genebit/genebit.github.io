@@ -3,16 +3,16 @@
 
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2Z8NJKRLT5"></script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-2Z8NJKRLT5"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'G-2Z8NJKRLT5');
-    </script>
-    
-    <title>Home - GeneBit</title>
+    </script> -->
+
+    <title>Home - GeneBit.Github.io</title>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,12 +21,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Reference to Fontawesome -->
+    <link href="resources/fontawesome_v5.15/css/fontawesome.css" rel="stylesheet">
+    <link href="resources/fontawesome_v5.15/css/brands.css" rel="stylesheet">
+    <link href="resources/fontawesome_v5.15/css/solid.css" rel="stylesheet">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="/custom.css">
 </head>
@@ -34,7 +38,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand">Genebit.Github.io</a>
+            <a class="navbar-brand btn btn-outline-dark" style="border-radius: 20px;">Genebit.Github.io</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -43,24 +47,20 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="https://genebit.github.io/home.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://genebit.github.io/pages/about.html">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://genebit.github.io/pages/blog.html">Blog</a>
+                        <a class="nav-link active" aria-current="page"
+                            href="https://genebit.github.io/home.html">Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             Project
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="https://genebit.github.io/myASCII/">MyASCII</a></li>
                             <li><a class="dropdown-item" href="#">My Configuration</a></li>
                             <li><a class="dropdown-item" href="#">Pong Game</a></li>
-                            <li><a class="dropdown-item" href="https://genebit.github.io/p5js-double-pendulum/">Double Pendulum</a></li>
+                            <li><a class="dropdown-item" href="https://genebit.github.io/p5js-double-pendulum/">Double
+                                    Pendulum</a></li>
                             <li><a class="dropdown-item" href="#">Rock Paper Scissor</a></li>
                         </ul>
                     </li>
@@ -69,17 +69,51 @@
         </div>
     </nav>
     <div class="row m-4">
-        <div class="col-md-2"></div>
-        <div class="col-md-8">
-            <h2 class="text-center">Welcome!</h2>
-            <hr/>
-            <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.</p>
+        <div class="col-md-1"></div>
+        <div class="col-md-3">
+            <img src="resources/profile.png">
         </div>
-        <div class="col-md-2"></div>
+        <div class="col-md-7">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="text-center">I Code and stuff.</h1>
+                    <hr/>
+                    <p>
+                        <div style="font-weight: 700; font-style: italic;">(Note to self: Make this prettier when this site actually has views.)</div><br>
+                        <div style="font-weight: 700; font-size: 20px;">My weapon of choice:</div>
+                        
+                        <div class="text-center">
+                            <i class="cpp">C<i class="plus">+</i><i class="plus">+</i></i>
+                            <i class="fab fa-python"></i>
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-js-square"></i>
+                            <i class="fab fa-css3"></i>
+                            <i class="fab fa-java"></i>
+                            <i class="fab fa-unity"></i>
+                        </div>
+                        <br>
+                        <div style="font-weight: 700; font-size: 20px;">What I do?</div><br>
+                        <div class="card" style="box-shadow: none; border-radius: 10px;">
+                            <div class="m-4" style="font-style: italic;">
+                                I code as a hobby.<br>
+                                I do web development through ASP.NET(for MVC Big Projects), or just basic HTML,JS and CSS.<br>
+                                I do game development through Unity, and C#.<br>
+                                I do dumb and automation projects <a href="https://github.com/genebit" style="color:black;">@Github</a>.
+                            </div>
+                        </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-1"></div>
     </div>
-
+    <div class="row">
+        <footer>
+            <div class="col-md-12">
+                <p style="float: left; color:rgb(184, 184, 184)">Built by @Gene - 2020. <br>Hosted by Github Pages.</p>
+            </div>
+        </footer>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
