@@ -1,4 +1,3 @@
-# Genebit.Github.io
 ## About
 *My Website for holding my web projects, portfolio, or my blogs.\
 Hosted by Github Pages.*
