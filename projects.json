@@ -1,0 +1,50 @@
+{
+	"PROJECTS": [
+		{
+			"IMAGE_SRC": "resources/card-images/custom-popos.png",
+			"TITLE": "My Custom PopOS 20.04 Setup",
+			"TAGS": "Linux | Configuration | Shell",
+			"DESCRIPTION": "Contains my custom PopOS Setup for Desktop with a command install.",
+			"SOURCE_CODE_LINK": "",
+			"WEB_LINK": ""
+		},
+		{
+			"IMAGE_SRC": "",
+			"TITLE": "My ASCII Table",
+			"TAGS": "Web | JQuery | Reference",
+			"DESCRIPTION": "Contains my reference site for looking up ASCII Table.",
+			"SOURCE_CODE_LINK": "https://github.com/genebit/myASCII/",
+			"WEB_LINK": ""
+		},
+		{
+			"IMAGE_SRC": "",
+			"TITLE": "Double Pendulum Simulation",
+			"TAGS": "Web | p5js | Simulation",
+			"DESCRIPTION": "A Double Pendulum Simulation using the p5js library.",
+			"SOURCE_CODE_LINK": "https://github.com/genebit/p5js-double-pendulum",
+			"WEB_LINK": ""
+		},
+		{
+			"IMAGE_SRC": "",
+			"TITLE": "Audio Visualization",
+			"TAGS": "Web | p5js",
+			"DESCRIPTION": "A web project that utilizes the p5js' sound library to visualize audio input to a customizable spectrum.",
+			"SOURCE_CODE_LINK": "https://github.com/genebit/p5js-audio-visualization",
+			"WEB_LINK": ""
+		},
+		{
+			"IMAGE_SRC": "",
+			"TITLE": "Ping-Pong Game",
+			"TAGS": "Game | Web | Multiplayer",
+			"DESCRIPTION": "A web version of the classic Ping-Pong Game built on the web with added 2 player realtime gameplay.",
+			"SOURCE_CODE_LINK": "https://github.com/genebit/pong-game",
+			"WEB_LINK": ""
+		},
+		{
+			"IMAGE_SRC": "",
+			"TITLE": "Using Web API",
+			"TAGS": "Web | API",
+			"DESCRIPTION": "To showcase my ability to use Web API."
+		}
+	]
+}
