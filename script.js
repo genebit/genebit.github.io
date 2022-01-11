@@ -18,8 +18,8 @@ $(document).ready(function () {
 				            <p>View project on:</p>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <button class="btn btn-outline-dark"><i class="fab fa-github"></i> Source Code</button>
-                                    <button class="btn btn-success">Web</button>
+                                    <a class="btn btn-outline-dark" href=${category[i].SOURCE_CODE_LINK} target="_blank"><i class="fab fa-github"></i> Source Code</a>
+                                    <a class="btn btn-success" href=${category[i].WEB_LINK} target="_blank">Web</a>
                                 </div>
                             </div>
 				        </div>
