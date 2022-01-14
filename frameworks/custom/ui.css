@@ -1,0 +1,79 @@
+@import url('colors.css');
+.navbar {
+	position: fixed;
+	top: 0;
+}
+.sidebar {
+	position: sticky;
+	top: 4rem;
+}
+/* NAVBAR ------------------ */
+.navbar {
+	background-color: var(--dark);
+	display: block;
+	overflow: hidden;
+	width: 100%;
+	z-index: 1;
+}
+.navbar .navbar-toggle {
+	float: right;
+	padding: 1rem;
+	display: none;
+}
+.navbar .navlinks {
+	padding: 1rem;
+	list-style-type: none;
+}
+.navbar .navlinks li {
+	display: inline-block;
+}
+.navbar .navlinks li {
+	margin-left: 2rem;
+	margin-right: 2rem;
+	transition: transform 200ms ease-in-out;
+}
+.navbar .navlinks li:hover {
+	transform: translateY(10px);
+}
+.hero {
+	padding: 5rem;
+	box-shadow: 0 3px 8px 0 var(--shadow-color);
+}
+.card {
+	margin: 1rem 0.5rem;
+	background-color: var(--dark);
+	outline: 3px solid var(--btn-outline-color);
+	box-shadow: 0 3px 8px 0 var(--shadow-color);
+	padding: 2rem;
+}
+.btn {
+	display: inline-block;
+	background-color: var(--dark);
+	outline: 3px solid var(--btn-outline-color);
+	box-shadow: 0 3px 8px 0 var(--shadow-color);
+	border: none;
+	padding: 0.5rem 1rem;
+}
+.btn.outline-dark {
+	transition: background-color 300ms ease-in-out;
+}
+.btn.outline-dark:hover {
+	cursor: pointer;
+	background-color: var(--btn-outline-color);
+}
+@media screen and (max-width: 700px) {
+	.navbar,
+	.sidebar {
+		position: static;
+	}
+	.navbar .navlinks {
+		display: none;
+	}
+	.navbar .navlinks li {
+		width: 100%;
+		margin: 0.5rem 0;
+	}
+	.navbar .navbar-toggle {
+		display: block;
+	}
+}
