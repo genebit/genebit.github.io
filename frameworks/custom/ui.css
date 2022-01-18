@@ -45,7 +45,7 @@
 	transform: translateY(8px);
 }
 .hero {
-	padding: 10rem 5rem;
+	padding: 16rem 5rem;
 	background-color: var(--hero-color);
 	box-shadow: 0 3px 8px 0 var(--shadow-color);
 }
@@ -95,5 +95,8 @@
 	}
 	.navbar .navbar-toggle {
 		display: block;
+	}
+	.hero {
+		padding: 13rem 0;
 	}
 }
