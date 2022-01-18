@@ -7,6 +7,13 @@
 	position: sticky;
 	top: 4rem;
 }
+.sidebar-navigation ul li {
+	padding: 0;
+	transition: transform 200ms ease-in-out;
+}
+.sidebar-navigation ul li:hover {
+	transform: scale(1.1);
+}
 /* NAVBAR ------------------ */
 .navbar {
 	background-color: var(--dark);
@@ -14,6 +21,7 @@
 	overflow: hidden;
 	width: 100%;
 	z-index: 1;
+	box-shadow: 0 3px 8px 0 var(--shadow-color);
 }
 .navbar .navbar-toggle {
 	float: right;
@@ -30,21 +38,28 @@
 .navbar .navlinks li {
 	margin-left: 2rem;
 	margin-right: 2rem;
+	margin-bottom: 0;
 	transition: transform 200ms ease-in-out;
 }
 .navbar .navlinks li:hover {
-	transform: translateY(10px);
+	transform: translateY(8px);
 }
 .hero {
-	padding: 5rem;
+	padding: 5rem 5rem;
+	background-image: var(--gradient-hero);
 	box-shadow: 0 3px 8px 0 var(--shadow-color);
 }
 .card {
-	margin: 1rem 0.5rem;
+	margin: 1rem 0.1rem;
 	background-color: var(--dark);
 	outline: 3px solid var(--btn-outline-color);
 	box-shadow: 0 3px 8px 0 var(--shadow-color);
 	padding: 2rem;
+	transition: transform 200ms ease-in-out, box-shadow 200ms ease-in-out;
+}
+.card:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 5px 10px 0 var(--shadow-color);
 }
 .btn {
 	display: inline-block;
@@ -60,6 +75,10 @@
 .btn.outline-dark:hover {
 	cursor: pointer;
 	background-color: var(--btn-outline-color);
+}
+.btn.outline-dark:focus {
+	outline: 3px solid var(--btn-outline-color);
+	box-shadow: 0 8px 4px 0 var(--shadow-color);
 }
 @media screen and (max-width: 700px) {
 	.navbar,

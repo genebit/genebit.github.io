@@ -3,10 +3,12 @@
 
 	--light: #e0c097;
 	--orange: #b85c38;
-	--brown: #5c3d2e;
+	--brown: #241710;
 	--dark: #2d2424;
 
 	--btn-outline-color: #0c0c0c;
+
+	--gradient-hero: linear-gradient(to right, #201712, #382118, #201712);
 
 	--selection-color: rgba(0, 0, 0, 0.3);
 	--shadow-color: rgba(0, 0, 0, 0.3);
