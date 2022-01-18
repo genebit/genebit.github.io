@@ -57,6 +57,10 @@ a:hover {
 li {
 	margin-bottom: 1.25rem;
 }
+svg {
+	position: absolute;
+	width: 100%;
+}
 /* Helpers -------------------------- */
 /* Font Weight */
 .font-light {
