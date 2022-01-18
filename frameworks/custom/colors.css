@@ -1,5 +1,9 @@
+@font-face {
+	font-family: SFMono;
+	src: url(../../assets/fonts/SFMonoRegular.ttf);
+}
 :root {
-	--font: 'SF Mono', monospace;
+	--font: SFMono, monospace;
 
 	--light: #e0c097;
 	--orange: #b85c38;
