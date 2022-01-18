@@ -1,0 +1,151 @@
+@import url('simple-grid.css');
+@import url('ui.css');
+@import url('colors.css');
+::selection {
+	background-color: var(--selection-color);
+}
+* {
+	font-family: var(--font);
+	color: var(--light);
+	line-height: var(--default-line-height);
+	padding: 0;
+	margin: 0;
+}
+html,
+body {
+	background-color: var(--dark);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--orange);
+	font-weight: 700;
+}
+h1 {
+	font-size: 2.5rem;
+}
+h2 {
+	font-size: 2rem;
+}
+h3 {
+	font-size: 1.375rem;
+}
+h4 {
+	font-size: 1.125rem;
+}
+h5 {
+	font-size: 1rem;
+}
+h6 {
+	font-size: 0.875rem;
+}
+hr {
+	border-color: var(--light);
+}
+li,
+p {
+	font-size: 0.9rem;
+	font-weight: 200;
+}
+a,
+a:hover {
+	text-decoration: none;
+}
+li {
+	margin-bottom: 1.25rem;
+}
+svg {
+	position: absolute;
+	width: 100%;
+}
+/* Helpers -------------------------- */
+/* Font Weight */
+.font-light {
+	font-weight: 300;
+}
+.font-regular {
+	font-weight: 400;
+}
+.font-heavy {
+	font-weight: 800;
+}
+/* Font Size */
+.fi-sm {
+	font-size: 20px;
+}
+.fi-md {
+	font-size: 25px;
+}
+.f-lg {
+	font-size: 60px;
+}
+/* Padding */
+.p-1 {
+	padding: 5px 15px;
+}
+.p-2 {
+	padding: 10px 20px;
+}
+.p-3 {
+	padding: 15px 25px;
+}
+.p-4 {
+	padding: 20px 30px;
+}
+/* Width */
+.w-25 {
+	width: 25%;
+}
+.w-50 {
+	width: 50%;
+}
+.w-75 {
+	width: 75%;
+}
+.w-100 {
+	width: 100%;
+}
+/* Font Colros */
+.color-light {
+	color: var(--light);
+}
+.color-orange {
+	color: var(--orange);
+}
+.color-brown {
+	color: var(--brown);
+}
+.color-dark {
+	color: var(--dark);
+}
+/* Background Color */
+.bg-light {
+	background-color: var(--light);
+}
+.bg-orange {
+	background-color: var(--orange);
+}
+.bg-brown {
+	background-color: var(--brown);
+}
+.bg-dark {
+	background-color: var(--dark);
+}
+.spacer {
+	padding: 4rem;
+}
+.no-bullet {
+	list-style-type: none;
+}
+/* Debugging */
+.debug {
+	outline: 2px dashed rgba(255, 0, 0, 0.3);
+}
+@media screen and (max-width: 700px) {
+	.spacer {
+		padding: 1rem;
+	}
+}
