@@ -6,16 +6,16 @@ $(document).ready(function () {
             </div>
             <div class="navlinks center">
                 <li>
-                    <a href="https://genebit.github.io/index.html"><i class="fa fa-home"></i> Home</a>
+                    <a href="index.html"><i class="fa fa-home"></i> Home</a>
                 </li>
                 <li>
-                    <a href="https://genebit.github.io/projects.html"><i class="fa fa-code"></i> Projects</a>
+                    <a href="projects.html"><i class="fa fa-code"></i> Projects</a>
                 </li>
                 <li>
-                    <a href="https://genebit.github.io/certificates"><i class="fa fa-certificate"></i> Certificates</a>
+                    <a href="certificates"><i class="fa fa-certificate"></i> Certificates</a>
                 </li>
                 <li>
-                    <a href="https://genebit.github.io/contacts"><i class="fa fa-address-book"></i> Contacts</a>
+                    <a href="contacts"><i class="fa fa-address-book"></i> Contacts</a>
                 </li>
             </div>
         </nav>

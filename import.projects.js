@@ -11,7 +11,7 @@ $.ajax({
                 <div class="card">
                     <div class="card-body">
                         <h4>${data.PROJECTS[i].TITLE}</h4>
-                        <p>${data.PROJECTS[i].TAGS}</p>
+                        <p class="text-muted">${data.PROJECTS[i].TAGS}</p>
                         <br />
                         <p>${data.PROJECTS[i].DESCRIPTION}</p>
                     </div>
