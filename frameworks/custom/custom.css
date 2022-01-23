@@ -22,7 +22,7 @@ h4,
 h5,
 h6 {
 	color: var(--orange);
-	font-weight: 700;
+	font-weight: 800;
 }
 h1 {
 	font-size: 2.5rem;
@@ -53,60 +53,25 @@ p {
 a,
 a:hover {
 	text-decoration: none;
+	font-size: 0.85rem;
 }
 li {
 	margin-bottom: 1.25rem;
 }
-svg {
+header svg {
 	position: absolute;
 	width: 100%;
 }
-/* Helpers -------------------------- */
-/* Font Weight */
-.font-light {
-	font-weight: 300;
-}
-.font-regular {
-	font-weight: 400;
-}
-.font-heavy {
-	font-weight: 800;
-}
-/* Font Size */
+/* Font Icon */
 .fi-sm {
 	font-size: 20px;
 }
 .fi-md {
 	font-size: 25px;
 }
+/* Font size */
 .f-lg {
 	font-size: 60px;
-}
-/* Padding */
-.p-1 {
-	padding: 5px 15px;
-}
-.p-2 {
-	padding: 10px 20px;
-}
-.p-3 {
-	padding: 15px 25px;
-}
-.p-4 {
-	padding: 20px 30px;
-}
-/* Width */
-.w-25 {
-	width: 25%;
-}
-.w-50 {
-	width: 50%;
-}
-.w-75 {
-	width: 75%;
-}
-.w-100 {
-	width: 100%;
 }
 /* Font Colros */
 .color-light {
@@ -135,10 +100,12 @@ svg {
 	background-color: var(--dark);
 }
 .spacer {
-	padding: 4rem;
+	padding: 4rem 0;
 }
-.no-bullet {
-	list-style-type: none;
+.text-muted {
+	color: var(--light-muted);
+	font-weight: 600;
+	font-size: 14px;
 }
 /* Debugging */
 .debug {
@@ -146,6 +113,6 @@ svg {
 }
 @media screen and (max-width: 700px) {
 	.spacer {
-		padding: 1rem;
+		padding: 1rem 0;
 	}
 }

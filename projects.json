@@ -1,0 +1,28 @@
+{
+	"PROJECTS": [
+		{
+			"IMG": "",
+			"TITLE": "Double Pendulum",
+			"TAGS": "p5js | Simulation | Web",
+			"DESCRIPTION": "A Double Pendulum Simulation built using the p5js library.",
+			"SOURCE_CODE": "https://github.com/genebit/p5js-double-pendulum",
+			"WEB_LINK": "https://genebit.github.io/p5js-double-pendulum/"
+		},
+		{
+			"IMG": "",
+			"TITLE": "My ASCII Table",
+			"TAGS": "Reference | Web",
+			"DESCRIPTION": "A reference website for looking up the ASCII Table.",
+			"SOURCE_CODE": "https://github.com/genebit/myASCII",
+			"WEB_LINK": "https://genebit.github.io/myASCII/"
+		},
+		{
+			"IMG": "",
+			"TITLE": "Audio Visualization",
+			"TAGS": "p5js | Simulation | Web",
+			"DESCRIPTION": "A simple fun project for visualizing audio input with customizable settings.",
+			"SOURCE_CODE": "https://github.com/genebit/p5js-audio-visualization",
+			"WEB_LINK": "https://genebit.github.io/p5js-audio-visualization/"
+		}
+	]
+}
