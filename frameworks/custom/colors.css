@@ -5,7 +5,8 @@
 :root {
 	--font: SFMono, monospace;
 
-	--light: #e0c097;
+	--light: #b3946d;
+	--light-muted: #a56d53;
 	--orange: #b85c38;
 	--brown: #241710;
 	--dark: #2d2424;
