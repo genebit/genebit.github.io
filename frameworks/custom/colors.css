@@ -1,23 +1,26 @@
 @font-face {
 	font-family: SFMono;
-	src: url(../../assets/fonts/SFMonoRegular.ttf);
+	src: url('../../assets/fonts/SFMonoRegular.ttf');
 }
 :root {
 	--font: SFMono, monospace;
 
 	--light: #b3946d;
-	--light-muted: #a56d53;
 	--orange: #b85c38;
+	--orange-active: #d85d2c;
+
+	--danger: #c74747;
+	--danger-active: #af3737;
+
 	--brown: #241710;
 	--dark: #2d2424;
+	--darker: #1f1818;
 
-	--hero-color: #1f1818;
+	--text-muted: #a56d53;
 	--btn-outline-color: #0c0c0c;
-
-	--gradient-hero: linear-gradient(to right, #201712, #382118, #201712);
 
 	--selection-color: rgba(0, 0, 0, 0.3);
 	--shadow-color: rgba(0, 0, 0, 0.3);
-
+	--box-shadow: rgb(255, 0, 0);
 	--default-line-height: 1.5;
 }
