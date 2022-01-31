@@ -61,8 +61,7 @@ p {
 	font-size: 0.9rem;
 	font-weight: 200;
 }
-a,
-a:hover {
+a {
 	text-decoration: none;
 	font-size: 0.85rem;
 }
