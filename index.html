@@ -16,34 +16,14 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<!-- Frameworks -->
-		<link rel="stylesheet" href="frameworks/custom/bootstrap-grid.min.css" />
+		<link rel="stylesheet" href="frameworks/custom/custom.css" />
 		<link rel="stylesheet" href="frameworks/fontawesome.v5.15.4/css/all.min.css" />
 		<script src="frameworks/jquery-v3.6.0.js"></script>
-
-		<!-- Scripts -->
-		<link rel="stylesheet" href="frameworks/custom/custom.css" />
+		<script defer src="import.navbar.js"></script>
 	</head>
 	<body>
 		<header>
-			<nav class="navbar">
-				<ul class="navlinks-desktop">
-					<li><i class="spacer"></i></li>
-					<li><i class="fa fa-home"></i><a href="https://genebit.github.io"> Home</a></li>
-					<li><i class="fa fa-certificate"></i><a href="https://genebit.github.io/certificates"> Certificates</a></li>
-					<li><i class="fa fa-code"></i><a href="https://genebit.github.io/projects"> Projects</a></li>
-					<li><i class="fa fa-address-book"></i><a href="https://genebit.github.io/contacts"> Contact</a></li>
-					<li><i class="spacer"></i></li>
-				</ul>
-				<ul class="navlinks-mobile">
-					<li><i class="spacer"></i></li>
-					<li><a class="fa fa-home" href="https://genebit.github.io"></a></li>
-					<li><a class="fa fa-certificate" href="https://genebit.github.io/certificates"></a></li>
-					<li><a class="fa fa-code" href="https://genebit.github.io/projects"></a></li>
-					<li><a class="fa fa-address-book" href="https://genebit.github.io/contacts"></a></li>
-					<li><i class="spacer"></i></li>
-				</ul>
-			</nav>
+			<div class="import-navbar"></div>
 			<div class="hero center">
 				<h1 class="f-lg">Gene Bitara</h1>
 				<p>Student | Developer | Geek</p>
@@ -51,151 +31,6 @@
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1f1818" fill-opacity="1" d="M0,160L80,176C160,192,320,224,480,202.7C640,181,800,107,960,106.7C1120,107,1280,181,1360,218.7L1440,256L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
 		</header>
 		<div class="spacer" id="aboutme"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-2 sidebar">
-					<div class="row">
-						<div class="col-md-12">
-							<h3>CONTENT</h3>
-							<hr />
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12">
-							<nav class="sidebar-navigation">
-								<ul class="li-mg">
-									<li><a href="#aboutme">About Me</a></li>
-									<li><a href="#projects">Highlighted Projects</a></li>
-									<li><a href="#skills">My Skills</a></li>
-									<li><a href="#languages">Programming Languages</a></li>
-									<li><a href="#languages">Tools I Use</a></li>
-								</ul>
-							</nav>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-10 content">
-					<div class="row">
-						<div class="col-md-8">
-							<h3>ABOUT ME</h3>
-							<hr />
-							<br />
-							<p>I am currently a College Student in pursuit of becoming a Software Engineering. I have always found passion in learning Programming and Technology as a whole and will always have!</p>
-						</div>
-						<div class="col-md-4"></div>
-					</div>
-					<div class="spacer" id="projects"></div>
-					<div class="row">
-						<div class="col-md-12">
-							<h3>HIGHLIGHTED PROJECTS</h3>
-							<hr />
-						</div>
-						<div class="col-md-12 card-deck">
-							<div class="card card-default">
-								<div class="card-body">
-									<h4>CRUD System</h4>
-									<small class="text-muted">Tag | Tag | Tag</small>
-									<p><br />Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci vel non, in modi exercitationem temporibus?</p>
-									<br />
-									<p>View project on:</p>
-								</div>
-								<div class="card-footer">
-									<button class="btn btn-secondary">Source Code</button>
-									<button class="btn btn-primary">Web</button>
-								</div>
-							</div>
-							<div class="card card-default">
-								<div class="card-body">
-									<h4>Fetching API</h4>
-									<small class="text-muted">Tag | Tag | Tag</small>
-									<p><br />Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci vel non, in modi exercitationem temporibus?</p>
-									<br />
-									<p>View project on:</p>
-								</div>
-								<div class="card-footer">
-									<button class="btn btn-secondary">Source Code</button>
-									<button class="btn btn-primary">Web</button>
-								</div>
-							</div>
-							<div class="card card-default">
-								<div class="card-body">
-									<h4>Websocket Messenger App</h4>
-									<small class="text-muted">Tag | Tag | Tag</small>
-									<p><br />Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci vel non, in modi exercitationem temporibus?</p>
-									<br />
-									<p>View project on:</p>
-								</div>
-								<div class="card-footer">
-									<button class="btn btn-secondary">Source Code</button>
-									<button class="btn btn-primary">Web</button>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="spacer" id="skills"></div>
-					<div class="row">
-						<div class="col-md-12">
-							<h3>SKILLS</h3>
-							<hr />
-							<br />
-							<div class="row">
-								<div class="col-md-6">
-									<ul class="li-mg">
-										<li>Knowledge in using Operating System such as Windows and Linux.</li>
-										<li>Knowledge in using Version Control.</li>
-										<li>Knowledge in designing/building (GUI) pc applications.</li>
-										<li>Understanding in Object-Oriented Programming (OOP).</li>
-									</ul>
-								</div>
-								<div class="col-md-6">
-									<ul class="li-mg">
-										<li>Web Development through the use of different framworks and libraries such as ASP.NET (for Large Projects), or just basic frontend languages along with Bootstrap and JQuery.</li>
-										<li>Game Development through Unity, and C#.</li>
-										<li>Simple and interactive automation projects on Github.</li>
-									</ul>
-								</div>
-								<p>Learn more about me through my Resume!</p>
-								<br />
-								<br />
-								<div class="col-md-12">
-									<button class="btn btn-secondary">View Resume</button>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="spacer" id="languages"></div>
-					<div class="row">
-						<div class="col-md-12">
-							<h3>USED LANGUAGES & TOOLS</h3>
-							<hr />
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12">
-							<div class="card-deck">
-								<div class="card card-default">
-									<div class="card-body text-center p-4">
-										<i class="fab fa-python fi-md color-light"></i>
-										<i class="fab fa-html5 fi-md color-light"></i>
-										<i class="fab fa-js fi-md color-light"></i>
-										<i class="fab fa-css3 fi-md color-light"></i>
-										<i class="fab fa-bootstrap fi-md color-light"></i>
-										<i class="fab fa-java fi-md color-light"></i>
-									</div>
-								</div>
-								<div class="card card-default">
-									<div class="card-body text-center p-4">
-										<i class="fab fa-git fi-md color-light"></i>
-										<i class="fab fa-windows fi-md color-light"></i>
-										<i class="fab fa-linux fi-md color-light"></i>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="spacer"></div>
-				</div>
-			</div>
-		</div>
+		<div class="container"></div>
 	</body>
 </html>
