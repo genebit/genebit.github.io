@@ -1,0 +1,18 @@
+@import "fonts";
+@import "variables";
+@import "typo";
+@import "scrollbar";
+
+html,
+body {
+	margin: 0;
+	padding: 0.4rem;
+}
+
+.hero {
+	display: flex;
+	justify-content: center;
+}
+// Components
+@import "bs-grid";
+@import "sidebar";
