@@ -1,0 +1,158 @@
+$val: 0;
+@while $val <= 100 {
+	.w-#{$val} {
+		width: $val * 1%;
+	}
+	.h-#{$val} {
+		height: $val * 1%;
+	}
+	.vw-#{$val} {
+		width: $val * 1vw;
+	}
+	.vh-#{$val} {
+		height: $val * 1vh;
+	}
+	$val: $val + 10;
+}
+
+$spacer: 1rem;
+$spacers: (
+	"auto": auto,
+	0: 0,
+	1: $spacer * 0.25,
+	2: $spacer * 0.5,
+	3: $spacer,
+	4: $spacer * 1.5,
+	5: $spacer * 3,
+);
+
+// padding
+$padding-side: (
+	"p": (
+		padding,
+	),
+	"pt": (
+		padding-top,
+	),
+	"pb": (
+		padding-bottom,
+	),
+	"pl": (
+		padding-left,
+	),
+	"pr": (
+		padding-right,
+	),
+);
+@each $i, $val in $padding-side {
+	@each $j, $v in $spacers {
+		.#{$i}-#{$j} {
+			#{$val}: $v;
+		}
+	}
+}
+
+$padding-xy-sides: ("auto", "x", "y");
+@each $i in $padding-xy-sides {
+	@each $j, $v in $spacers {
+		@if $i == "px" {
+			.px-#{$j} {
+				padding-left: $v;
+				padding-right: $v;
+			}
+		} @else {
+			.py-#{$j} {
+				padding-top: $v;
+				padding-bottom: $v;
+			}
+		}
+	}
+}
+
+// padding
+$margin-side: (
+	"m": (
+		margin,
+	),
+	"mt": (
+		margin-top,
+	),
+	"mb": (
+		margin-bottom,
+	),
+	"ml": (
+		margin-left,
+	),
+	"mr": (
+		margin-right,
+	),
+);
+@each $i, $val in $margin-side {
+	@each $j, $v in $spacers {
+		.#{$i}-#{$j} {
+			#{$val}: $v;
+		}
+	}
+}
+
+.px-auto {
+	padding-left: auto;
+	padding-right: auto;
+}
+.py-auto {
+	padding-top: auto;
+	padding-bottom: auto;
+}
+
+$margin-xy-sides: ("x", "y");
+@each $i in $margin-xy-sides {
+	@each $j, $v in $spacers {
+		@if $i == "px" {
+			.mx-#{$j} {
+				margin-left: $v;
+				margin-right: $v;
+			}
+		} @else {
+			.my-#{$j} {
+				margin-top: $v;
+				margin-bottom: $v;
+			}
+		}
+	}
+}
+
+.mx-auto {
+	margin-left: auto;
+	margin-right: auto;
+}
+.my-auto {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+// gap
+$gap-value: 0;
+@while $gap-value <= 32 {
+	.gap-#{$gap-value} {
+		gap: $gap-value * 1px;
+	}
+	$gap-value: $gap-value + 1;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.justify-content-center {
+	justify-content: center;
+}
+
+.align-items-center {
+	align-items: center;
+}
+
+.flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

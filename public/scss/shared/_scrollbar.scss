@@ -1,0 +1,9 @@
+::-webkit-scrollbar {
+	width: 0.75rem;
+}
+::-webkit-scrollbar-track {
+	background: $panel;
+}
+::-webkit-scrollbar-thumb {
+	background: $accent;
+}

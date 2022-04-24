@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap");
+
+* {
+	font-family: "Khand", sans-serif;
+}
+h1,
+h2,
+h3 {
+	font-weight: 700;
+	color: $white;
+}
+h4,
+h5,
+h6 {
+	font-weight: 600;
+	color: $white;
+}
+p,
+small,
+a {
+	font-weight: 400;
+	color: $white;
+}
+
+$weights: (300, 400, 500, 600, 700);
+@each $weight in $weights {
+	.fw-#{$weight} {
+		font-weight: $weight;
+	}
+}
