@@ -4,8 +4,8 @@
 $(document).ready(() => {
 	const path = {
 		// Add Partial views here
-		sidebar: "/views/shared/_sidebar.html",
-		sidebarprofile: "/views/shared/_sidebar-profile.html",
+		sidebar: "/_sidebar.html",
+		sidebarprofile: "/_sidebar-profile.html",
 	}
 	$.each(path, (key, value) => {
 		loadPartialView(value, `insert-${key}`)
