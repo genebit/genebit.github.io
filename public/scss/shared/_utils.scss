@@ -1,0 +1,31 @@
+// colors (text color)
+// text-muted
+
+// jumbotron heading
+$heading-size: (
+	1: 4rem,
+	2: 3.75rem,
+	3: 3.5rem,
+);
+@each $item, $value in $heading-size {
+	.section-fs-h#{$item} {
+		font-size: $value;
+	}
+}
+
+$text-align: (center, left, right);
+@each $item in $text-align {
+	.text-#{$item} {
+		text-align: $item;
+	}
+}
+
+.m-0 {
+	margin: 0;
+}
+.p-0 {
+	padding: 0;
+}
+.spacer-1 {
+	min-height: 5rem;
+}

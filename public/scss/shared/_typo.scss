@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap");
+
+* {
+	font-family: "Khand", sans-serif;
+	color: $light;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+$headings: (
+	h1: 3.125rem,
+	h2: 2.65rem,
+	h3: 2.25rem,
+	h4: 2rem,
+	h5: 1.65rem,
+	h6: 1.25rem,
+);
+@each $item, $value in $headings {
+	#{$item} {
+		font-size: $value;
+		line-height: 1.5;
+		margin: 0;
+	}
+}
+
+p,
+small,
+a {
+	font-weight: 400;
+}
+
+$weights: (
+	"thin": 300,
+	"regular": 400,
+	"medium": 500,
+	"semibold": 600,
+	"bold": 700,
+);
+@each $item, $value in $weights {
+	.fw-#{$item} {
+		font-weight: $value;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	// tablet size
+	@each $item, $value in $headings {
+		#{$item} {
+			font-size: calc($value - 1rem);
+		}
+	}
+}

@@ -1,0 +1,28 @@
+@import "./shared/variables";
+@import "./shared/typo";
+@import "./shared/scrollbar";
+
+body {
+	margin: 0;
+	padding: 1rem;
+	background-color: $blue-400;
+}
+::selection {
+	background-color: $blue-100;
+}
+.main-row-container main {
+	width: 100%;
+}
+[insert-sidebarprofile] {
+	@media screen and (max-width: 864px) {
+		height: auto;
+		display: none;
+	}
+}
+// Components
+@import "./components/sidebar";
+@import "./components/sidebar-profile";
+@import "./components/jumbotron";
+
+@import "./shared/utils";
+@import "./layout/grid";
