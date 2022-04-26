@@ -15,7 +15,6 @@ function loadPartialView(path, dataAttr) {
 	fetch(path)
 		.then((response) => response.text())
 		.then((html) => {
-			console.log(html)
 			$(`[${dataAttr}]`).append(html)
 		})
 		.catch((error) => {
