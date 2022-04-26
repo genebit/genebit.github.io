@@ -1,18 +1,28 @@
-@import "fonts";
-@import "variables";
-@import "typo";
-@import "scrollbar";
+@import "./shared/variables";
+@import "./shared/typo";
+@import "./shared/scrollbar";
 
-html,
 body {
 	margin: 0;
-	padding: 0.4rem;
+	padding: 1rem;
+	background-color: $blue-400;
 }
-
-.hero {
-	display: flex;
-	justify-content: center;
+::selection {
+	background-color: $blue-100;
+}
+.main-row-container main {
+	width: 100%;
+}
+[insert-sidebarprofile] {
+	@media screen and (max-width: 864px) {
+		height: auto;
+		display: none;
+	}
 }
 // Components
-@import "bs-grid";
-@import "sidebar";
+@import "./components/sidebar";
+@import "./components/sidebar-profile";
+@import "./components/jumbotron";
+
+@import "./shared/utils";
+@import "./layout/grid";
