@@ -2,22 +2,27 @@
 // Note that the partialViewName should not include the _ at start.
 
 $(document).ready(() => {
-	const path = {
-		// Add Partial views here
-		sidebar: "/views/sidebar.html",
-		sidebarprofile: "/views/sidebar-profile.html",
-	}
-	$.each(path, (key, value) => {
-		loadPartialView(value, `insert-${key}`)
-	})
+    const path = {
+        // Add Partial views here
+        sidebar: "/public/views/sidebar.txt",
+        sidebarprofile: "/public/views/sidebar-profile.txt",
+    }
+    $.each(path, (key, value) => {
+        loadPartialView(value, `insert-${key}`)
+    })
 })
-function loadPartialView(path, dataAttr) {
-	fetch(path)
-		.then((response) => response.text())
-		.then((html) => {
-			$(`[${dataAttr}]`).append(html)
-		})
-		.catch((error) => {
-			console.warn("Failed to load partial view", error)
-		})
+
+function loadPartialView(file, dataAttr) {
+    var rawFile = new XMLHttpRequest()
+
+    rawFile.open("GET", file, false)
+    rawFile.onreadystatechange = () => {
+        if (rawFile.readyState === 4) {
+            if (rawFile.status === 200 || rawFile.status == 0) {
+                var allText = rawFile.responseText
+                $(`[${dataAttr}]`).html(allText)
+            }
+        }
+    }
+    rawFile.send(null)
 }
